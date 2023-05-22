@@ -3,8 +3,7 @@ export default function Home() {
  
   return (
     <>
-   <h1>Hola mundo en next</h1>
-    <Link href='/nosotros'>ir hacia nosotros</Link>
+   <h1>Hola mundo desde page Home</h1>
     </>
     
   )

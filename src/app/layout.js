@@ -1,5 +1,7 @@
 import { Outfit } from 'next/font/google';
 import './globals.css'
+import Navegation from './components/Navegation';
+
 
 const outfit = Outfit({ 
   subsets: ['latin'],
@@ -8,15 +10,18 @@ const outfit = Outfit({
   variable: '--fuente-principal'
 });
 
-export const metadata = {
-  title: 'Blog de Andres Vargas',
-  description: 'Creado por Maykol Castro O',
-}
-
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body className={outfit.variable}>{children}</body>
+      <head>
+        <title>
+          El primer blog de Andres
+        </title>
+      </head>
+      <body className={outfit.variable}>
+     <Navegation/>
+        {children}
+        </body>
     </html>
   )
 }
