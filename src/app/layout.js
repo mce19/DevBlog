@@ -1,6 +1,8 @@
 import { Outfit } from 'next/font/google';
 import './globals.css'
 import Navegation from './components/Navegation';
+import Headerpage from './header/page';
+
 
 
 const outfit = Outfit({ 
@@ -10,17 +12,20 @@ const outfit = Outfit({
   variable: '--fuente-principal'
 });
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, title = '', description = '' }) {
   return (
     <html lang="es">
       <head>
         <title>
-          El primer blog de Andres
+          {`${title}`}
         </title>
       </head>
       <body className={outfit.variable}>
+     < Headerpage />
      <Navegation/>
+     <h1>Desde el layout el cual se muestra en todas las page</h1>
         {children}
+
         </body>
     </html>
   )

@@ -6,8 +6,12 @@ const links = [{
   }, {
     label: 'About',
     route: '/about'
-  
-  
+  }, {
+    label: 'Header',
+    route: '/header'
+  }, {
+    label: 'Footer',
+    route: '/footer'
   }]
 
 // una funcion con row fuctions
