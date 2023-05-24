@@ -22,6 +22,7 @@ export default function RootLayout({ children, title = 'Andres Vargas', descript
       </head>
       <body className={outfit.variable}>
      < Headerpage />
+     <Navegation/>
      <h1>Desde el layout el cual se muestra en todas las page</h1>
         {children}
 
