@@ -20,15 +20,11 @@ const Headerpage = () => {
 
     <nav className={styles.navegacion}>
      <Link href="/" className={styles.enlace}>
-  Inicio
-     </Link>
-     <Link href="/about">
-  Nosotros
-     </Link>
-     <Link href="/footer">
   Blog
      </Link>
-     <Link href="/shop">
+     <Link href="/about">
+  Sobre mi
+     </Link>   <Link href="/shop">
   Tienda
      </Link>
        </nav>

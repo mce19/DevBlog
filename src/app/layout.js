@@ -1,6 +1,7 @@
 import { Outfit } from 'next/font/google';
 import './globals.css'
 import Headerpage from './header/page';
+import Footerpage from './footer/page';
 
 
 
@@ -22,9 +23,8 @@ export default function RootLayout({ children, title = 'Andres Vargas', descript
       </head>
       <body className={outfit.variable}>
      < Headerpage />
-     <h1>Desde el layout el cual se muestra en todas las page</h1>
         {children}
-
+<Footerpage/>
         </body>
     </html>
   )

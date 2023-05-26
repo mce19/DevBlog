@@ -1,9 +1,18 @@
 // una funcion con row fuctions
 function Shoppage () {
     return (
-      <div>
-        <h1>Desde la tienda</h1>
-      </div>
+      <main className="contenedor">
+            <h1 className="heading">Nuestra Colección</h1>
+
+            <div className={styles.grid}>
+              {guitarras?.map(guitarra => (
+                  <Guitarra
+                      key={guitarra.id}
+                      guitarra={guitarra.attributes}
+                  />
+              ))}
+            </div>
+        </main>
     );
   }
   
